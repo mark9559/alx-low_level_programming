@@ -1,17 +1,19 @@
+#include "main.h"
 
 /**
- * main - prints all possible combinations of single digit numbers
+ * print_alphabet - alphabet in lowercase
  *
- * Return: Always 0 (Success)
+ * Return: void
  */
+
 void print_alphabet(void)
 {
-    char letter = 'a';
+	char b;
 
-    while (letter <= 'z') {
-        _putchar(letter);
-        letter++;
-    }
-    _putchar('\n');
+	for (b = 'a'; b <= 'z'; b++)
+	{
+		_putchar(b);
+	}
+	_putchar('\n');
 }
 
