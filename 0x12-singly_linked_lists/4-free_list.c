@@ -1,9 +1,9 @@
 #include "lists.h"
 
 /**
- * free_list -Free a list_list
+ * free_list - Free a list_t list
  * @head: Type pointer struct list_t
- * Return: free hand
+ * Return: free head
  */
 void free_list(list_t *head)
 {
@@ -12,7 +12,7 @@ void free_list(list_t *head)
 	tmp = head;
 	while (head != NULL)
 	{
-		tmp = head
+		tmp = head;
 		head = head->next;
 		free(tmp->str);
 		free(tmp);
